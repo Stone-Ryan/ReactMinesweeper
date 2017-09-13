@@ -4,5 +4,5 @@ import ReactDOM from 'react-dom';
 import Game from './components/game';
 
 document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(<Game />, document.getByElementId('main'));
+  ReactDOM.render(<Game />, document.getElementById('main'));
 });

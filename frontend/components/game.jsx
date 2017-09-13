@@ -10,7 +10,7 @@ class Game extends Component {
     const board = new Minesweeper.Board(9, 10);
 
     this.state = {
-      board,
+      board: board,
     }
 
     this.updateGame = this.updateGame.bind(this);
@@ -21,7 +21,9 @@ class Game extends Component {
   }
 
   render() {
+    return (
     <Board board={this.state.board} update={this.updateGame} />
+    )
   }
 }
 
