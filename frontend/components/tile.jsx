@@ -18,9 +18,9 @@ class Tile extends Component {
     let klass, text, count;
 
     if (tile.explored) {
-      if (this.bombed) {
+      if (tile.bombed) {
         klass = 'bombed';
-        text = '/u2622';
+        text = '\u2622';
       } else {
         klass = 'explored';
         count = tile.adjacentBombCount();
@@ -28,7 +28,7 @@ class Tile extends Component {
       }
     } else if (tile.flagged) {
         klass = 'flagged';
-        text = '/u2622';
+        text = '\u2691';
     } else {
         klass = 'unexplored';
     }
